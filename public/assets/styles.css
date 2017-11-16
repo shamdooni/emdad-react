@@ -1,0 +1,222 @@
+@import url(WebFonts/css/fontiran.css);
+
+body {
+    font-family: IRANSans !important;
+    font-weight: 300;
+    font-size: 100%;
+}
+
+* {
+    font-family: IRANSans !important;
+    direction: rtl !important;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    height: 60px;
+    background-color: #ed1846;
+    position: fixed;
+    top: 0;
+    padding: 10px 20px 10px 20px;
+    z-index: 100;
+    color: white;
+}
+.head img {
+    height: 90%;
+    float: right;
+    max-width: 25vw;
+}
+.head .title {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .7em;
+}
+
+.map {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgb(234,232,222);
+}
+
+.entry {
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    padding-top: 8px;
+    border-bottom: 3px solid #ed1846;
+}
+.entry button {
+    display: inline-block;
+    width: 30vw;
+    height: 40px;
+    margin-right: 2vw;
+    background-color: white;
+    color: #ed1846;
+    border: 2px solid #ed1846;
+    border-radius: 15px;
+    font-size: .7em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.entry button:hover {
+    background-color: #ed1846;
+    color: white;
+}
+
+.alert {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100vw;
+    text-align: center;
+    z-index: 100;
+}
+.alert button {
+    display: block;
+    background-color: #ed1846;
+    border: 3px solid white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+    width: 50vw;
+    height: 100%;
+    margin-right: 23vw;
+    font-size: 1em;
+    cursor: pointer;
+}
+.alert button:hover {
+    background-color: white;
+    color: #ed1846;
+    border: 3px solid #ed1846;
+}
+
+footer {
+    display: none;
+}
+
+.shamdooni-input {
+    height: 35px;
+    padding: 10px;
+    margin: 5px;
+    font-size: .8em;
+    border: #ed1846 1px solid;
+    border-radius: 100px;
+}
+
+.shamdooni-textarea {
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+    font-size: .8em;
+    border: #ed1846 1px solid;
+    border-radius: 15px;
+}
+
+.submit-button {
+    height: 35px;
+    width: 100%;
+    background: #ed1846;
+    border-radius: 100px;
+    margin: 15px 5px;
+    color: white;
+    font-size: .9em;
+}
+
+.input-100 {
+    width: 100%
+}
+
+
+.form-div {
+    margin: 5px
+}
+
+@media only screen and (min-width: 770px) {
+    
+    .tools {
+        position: absolute;
+        right: 15px;
+        top: 70px;
+        z-index: 100;
+        width: 200px;
+        padding: 15px 15px 10px 15px;
+        background-color: transparent;
+        border: none;    }    
+
+    .entry {
+        position: relative;
+        height: auto;
+        top: 0;
+        background-color: transparent;
+        border-bottom: none;
+    }
+    .entry button {
+        display: block;
+        width: 100%;
+        height: 35px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        background-color: white;
+        color: #ed1846;
+        border: 2px solid #ed1846;
+        border-radius: 20px;
+        font-size: .8em;
+    }
+    .alert {
+        position: relative;
+        bottom: 0px;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+    }
+    .alert button {
+        display: block;
+        background-color: #ed1846;
+        border: 3px solid #ed1846;
+        border-radius: 50px;
+        color: white;
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+        font-size: .8em;
+    }
+
+    footer {
+        display: unset;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        z-index: 100;
+        background-color: #ed1846;
+        color: white;
+        font-size: .8em;
+        padding-right: 20px;
+    }
+    footer a {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .head .title {
+        font-size: .9em;
+    }
+    .entry button {
+        font-size: .8em;
+    }
+}
+
+
